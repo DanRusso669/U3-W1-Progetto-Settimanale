@@ -9,7 +9,7 @@ class Gallery extends Component {
   };
 
   fetchedImg = () => {
-    fetch(` https://www.omdbapi.com/?s=${this.props.query}&apikey=13061775&type=movie`, {})
+    fetch(` https://www.omdbap.com/?s=${this.props.query}&apikey=13061775&type=movie`, {})
       .then(resp => {
         if (resp.ok) {
           return resp.json();
@@ -45,19 +45,20 @@ class Gallery extends Component {
       <>
         {!this.state.isLoading & (this.state.movieList.length === 0) ? (
           <>
-            <h4 className="sectionTitle mt-3">{this.props.query.toLowerCase()}</h4>
+            <h4 className="sectionTitle mt-3">{this.capitalizeTitle(this.props.query)}</h4>
             <Alert variant="danger">Non è stato possibile caricare i film.</Alert>
           </>
         ) : (
           <>
             <h4 className="sectionTitle mt-3">{this.capitalizeTitle(this.props.query)} </h4>
+            <MineCarousel list={this.state.movieList}></MineCarousel>
           </>
         )}
         {this.state.isLoading && <Spinner animation="border" variant="secondary" className="my-2" />}
 
         {console.log(this.state.movieList)}
 
-        <MineCarousel list={this.state.movieList}></MineCarousel>
+        {/* <MineCarousel list={this.state.movieList}></MineCarousel> */}
 
         {/* <Row xs={1} sm={2} md={3} xl={6} className="gy-2 gx-1">
           {this.state.movieList.slice(0, 6).map(movie => (
