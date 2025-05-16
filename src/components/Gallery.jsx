@@ -9,7 +9,7 @@ class Gallery extends Component {
   };
 
   fetchedImg = () => {
-    fetch(` https://www.omdbap.com/?s=${this.props.query}&apikey=13061775&type=movie`, {})
+    fetch(` https://www.omdbapi.com/?s=${this.props.query}&apikey=13061775&type=movie`, {})
       .then(resp => {
         if (resp.ok) {
           return resp.json();
