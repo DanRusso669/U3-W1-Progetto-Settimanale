@@ -13,7 +13,7 @@ function App() {
         <Hero />
         <Gallery query="BATMAN" />
         <Gallery query="avengers" />
-        <Gallery query="harry potter" />
+        <Gallery query="MAd Max" />
       </Container>
       <Footer />
     </>

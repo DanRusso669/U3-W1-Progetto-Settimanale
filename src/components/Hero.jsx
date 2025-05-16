@@ -5,7 +5,7 @@ import { Grid, Grid3x3 } from "react-bootstrap-icons";
 class Hero extends Component {
   render() {
     return (
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between mt-4">
         <div className="d-flex">
           <h2 className="mb-4">TV Shows</h2>
           <Dropdown className="ms-4 mt-1">

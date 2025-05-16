@@ -11,37 +11,37 @@ const TopBar = function () {
         </Nav.Link>
         <Navbar.Toggle aria-controls="toggleQui" className="bg-light" />
         <Navbar.Collapse id="toggleQui">
-          <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
+          <Nav className="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
             <Nav.Link href="#home" className="fw-bold sections">
               Home
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold sections">
+            <Nav.Link href="#home" className="fw-bold sections">
               TV Shows
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold sections">
+            <Nav.Link href="#home" className="fw-bold sections">
               Movies
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold sections">
+            <Nav.Link href="#home" className="fw-bold sections">
               Recently Added
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold sections">
+            <Nav.Link href="#home" className="fw-bold sections">
               My List
             </Nav.Link>
           </Nav>
-          <Nav className="d-flex  align-items-center">
-            <Nav.Link href="#link" className="fw-bold icons">
+          <div className="d-flex  align-items-baseline">
+            <Nav.Link href="#home" className="fw-bold icons">
               <Search />
             </Nav.Link>
-            <Nav.Link href="#link" id="kids" className="fw-bold">
+            <Nav.Link href="#home" id="kids" className="fw-bold">
               KIDS
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold icons">
+            <Nav.Link href="#home" className="fw-bold icons">
               <Bell />
             </Nav.Link>
-            <Nav.Link href="#link" className="fw-bold icons">
+            <Nav.Link href="#home" className="fw-bold icons">
               <PersonCircle />
             </Nav.Link>
-          </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
